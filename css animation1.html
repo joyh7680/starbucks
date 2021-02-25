@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 에니메이션 실행 적용 */
+        h1 {
+            animation-name: changecolor;
+            animation-duration: 2s;
+        }
+        
+        h2 {
+            animation-name: changecolor;
+            animation-duration: 2s;
+            animation-delay: 2s;
+        }
+
+      h3 {
+          position: fixed; top: 100px; left: 0;
+       background-color: yellow; 
+       width: 100px; height: 30px;
+      
+        animation-name: move;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+           }
+
+      img {
+          position: fixed; top: 100px; left: 0;
+       background-color: yellow; 
+       width: 300px; opacity: 1;
+      
+        animation-name: move;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+
+            animation: move 2s 1s ease 1 forwards; 
+           }
+
+        /* ㅇㅔ니메이션 정의 */
+
+        /* @keyframes move {
+            from {color: black; }
+            to {color: red; }
+        } */
+
+        @keyframes changecolor {
+          0% {color: black; }
+          25% {color: green;}
+          50% {color: yellow;}
+          75% {color: hotpink;}
+          100%   {color: red; }
+        }
+
+        @keyframes move{
+            from {left: 0;}
+            to {left: 800px;}
+        } 
+
+ 
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>hello</h1>
+        <h2>welcome to vomacademy</h2>
+        <h3>fornt-end</h3>
+        <img src="../황지원/apple/img/promo_medium_apple_1068.jpg ">
+    </div>
+</body>
+</html>
