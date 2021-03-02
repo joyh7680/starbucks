@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Starbucks</title>
+   <style>
+      * { margin: 0; padding: 0; box-sizing: border-box;}
+
+      .hero { width: 100%; height: 646px; background-image: url(img/2021_spring_bg.jpg);}
+
+      .hero_wrap { width: 1080px; height: 646px; position: relative; top:0; left:calc(50% - 540px); }
+
+      .hero_title { position: absolute; top:60px; left:0; width: 463px; text-align: center;}
+
+      .hero_title img { margin: 0 0 20px 0;}
+      .hero_title a { width: 120px; height: 40px; border: 1px solid rgb(234,126,70); padding: 10px 30px; color:rgb(234,126,70); text-decoration: none; border-radius: 6px; }
+
+
+      .hero_menu_1 { position: absolute; top:168px; left:192px; }
+      .hero_menu_1 img { position: absolute;}
+      .hero_menu_1 img:first-child { top:0px; left:0px;}
+      .hero_menu_1 img:last-child { top:380px; left:0px; left:120px;}
+
+      .hero_menu_2 { position: absolute; top:76px; left:408px;}
+      .hero_menu_2 img { position: absolute;}
+      .hero_menu_2 img:first-child { top:0px; left:0px;}
+      .hero_menu_2 img:last-child { top:375px; left:0px; left:160px;}
+
+
+      .hero_menu_3 { position: absolute; top:177px; left:660px;}
+      .hero_menu_3 img { position: absolute;}
+      .hero_menu_3 img:first-child { top:0px; left:0px;}
+      .hero_menu_3 img:last-child { top:370px; left:0px; left:170px;}
+
+      .banner { position: fixed; top:36px; left:calc(50% + 566px);}
+      .banner img { display: block; width: 140px;}
+   </style>
+</head>
+<body>
+   <section class="hero">
+       <div class="hero_wrap">
+         <div class="hero_title">
+            <img src="img/2021_spring_slogan.png">
+            <a href="">자세히 보기</a>
+         </div>
+         <div class="hero_menu_1">
+            <img src="img/2021_spring_latte.png">
+            <img src="img/2021_spring_latte_tit.png">
+         </div>
+         <div class="hero_menu_2">
+            <img src="img/2021_spring_frappuccino.png">
+            <img src="img/2021_spring_frappuccino_tit.png">
+         </div>
+         <div class="hero_menu_3">
+            <img src="img/2021_spring_lemonade.png">
+            <img src="img/2021_spring_lemonade_tit.png">
+         </div>
+      </div>
+   </section>   
+
+   <div class="banner">
+      <img src="img/banner.png">
+      <img src="img/banner2.png">
+   </div>
+</body>
+</html>

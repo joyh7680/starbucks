@@ -1,36 +1,48 @@
- * {margin: 0%; padding: 0; box-sizing: border-box;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.hero_wrap {width: 100%; height: 646px; background-image: url(../img/2021_spring_bg.jpg);}
+
+.hero {width: 1080px; height: 646px;  position: relative; top: 0; left: calc(50% - 540px); }
 
 
-.hero_wrap { width: 100%; height:646px; background-image: url(../img/2021_spring_bg.jpg); background-size: auto; background-position: center center; padding-top: 65px ; }
+.hero_title {position: absolute; top: 60px; left: 0; width: 463px;text-align: center;
+ opacity: 0; animation: fade_in 2s forwards;
+ z-index: 1;}
 
-.hero {margin: 0 228px; display: flex; width: 1080px; height:646px; position: relative; top: 0; left:calc(50% - 540px);}
+.hero_title img {margin-bottom: 21px;}
+.hero_title a {width: 121px; height: 34px; border: 2px solid rgb(234,126,76); padding: 10px 30px; text-decoration: none; border-radius: 5px;  font-size: 15px;line-height :34px; color: rgb(234, 120, 76);}
 
-.hero_title {position: absolute; top: 60px; left: 0;  width: 463px; text-align: center; z-index: 1;}
-.hero_title img {margin-bottom: 10px;}
+.hero_menu_1 { position: absolute; top:168px; left:192px; 
+   opacity: 0; animation: fade_in 2s forwards 1s;
+   z-index: 4;}
+.hero_menu_1 img { position: absolute;}
+.hero_menu_1 img:first-child { top:0px; left:0px;}
+.hero_menu_1 img:last-child { top:380px; left:0px; left:120px;}
 
-.hero_title a {width: 12px; height: 40px; border: 1px solid rgb(234,120,76); padding: 10px 40px; text-decoration: none; border-radius: 6px; }
+.hero_menu_2 { position: absolute; top:76px; left:408px;
+   opacity: 0; animation: fade_in 2s forwards 2s;
+   z-index: 3;}
+.hero_menu_2 img { position: absolute;}
+.hero_menu_2 img:first-child { top:0px; left:0px;}
+.hero_menu_2 img:last-child { top:375px; left:0px; left:160px;}
 
-.hero_menu_1 {position: absolute; top: 168px; left: 192; z-index: 4;  
-    opacity: 0; animation: fade_in 2s forwards 1s;}
-.hero_menu_1 img {position: absolute;}
-.hero_menu_1 img:nth-child(2) {top: 380px; left: 0; left: 120px;} 
 
-.hero_menu_2 {position: absolute; top: 76px; left: 408px; z-index: 3;  opacity: 0; animation: fade_in 2s forwards 2s;}
-.hero_menu_2 img {position: absolute;}
-.hero_menu_2 img:nth-child(2) {top: 380px; left: 0; left: 160px;} 
-
-.hero_menu_3 {position: absolute; top: 177px; left: 660px; z-index: 2; 
-    opacity: 0; animation: fade_in 2s forwards 3s;}
-.hero_menu_3 img {position: absolute;}
-.hero_menu_3 img:nth-child(3) {top: 370px; left: 0; left: 170px;}  
-
+.hero_menu_3 { position: absolute; top:177px; left:660px;
+   opacity: 0; animation: fade_in 2s forwards 3s;
+   z-index: 2;}
+.hero_menu_3 img { position: absolute;}
+.hero_menu_3 img:first-child { top:0px; left:0px;}
+.hero_menu_3 img:last-child { top:370px; left:0px; left:170px;}
+                                          
+                                        /* 566px?????????? */
 .banner {position: fixed; top: 36px; left: calc(50% + 566px);
-    opacity: 0; animation: fade_in 2s forwards 4s;}
+
+                                         /* 8s delay? */
+   opacity: 0; animation: fade_in 2s forwards 4s;
+   z-index: 100;}
 .banner img {display: block; width: 140px;}
 
-/* css animation */
-
 @keyframes fade_in {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  from { opacity: 0;}
+   to {opacity: 1;}
 }
